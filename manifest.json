@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "name": "Layout Checker",
+    "description": "Allows you to check layout for optimization",
+    "author": "Atom Space",
+    "background": {
+        "scripts": [
+            "jquery-3.3.1.min.js",
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "popup.js"
+            ],
+            "all_frames": true
+        }
+    ],
+    "web_accessible_resources": [],
+    "browser_action": {
+        "default_title": "Layout Checker",
+        "default_popup": "popup.html"
+    },
+    "short_name": "Layout Checker",
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "tabs"
+    ]
+}
