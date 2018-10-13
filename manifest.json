@@ -29,7 +29,10 @@
             "all_frames": true
         }
     ],
-    "web_accessible_resources": [],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "web_accessible_resources": [
+        "images/1.jpg"
+    ],
     "browser_action": {
         "default_title": "Layout Checker",
         "default_popup": "popup.html"
